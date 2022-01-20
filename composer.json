@@ -13,6 +13,7 @@
     "require": {
         "php": ">=7.0.0",
         "ext-imap": "*",
+        "badchoice/handesk-php": "*",
         "badchoice/hurricane": "^1.0",
         "badchoice/thrust": "^0.4.1",
         "drewm/mailchimp-api": "^2.4",
@@ -23,6 +24,7 @@
         "guzzlehttp/oauth-subscriber": "^0.3",
         "khill/fontawesomephp": "^1.0",
         "laravel/framework": "5.8.*",
+        "laravel/passport": "*",
         "laravel/slack-notification-channel": "^2.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8",
