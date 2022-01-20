@@ -16,7 +16,15 @@ Route::group(['namespace' => 'Api', 'middleware' => 'apiAuth'], function () {
 });
 
 Route::post('agent/login', 'Api\AgentController@login');
+
+
 Route::group(['namespace' => 'Api', 'prefix' => 'agent', 'middleware' => 'apiAuthAgent'], function () {
     Route::resource('tickets', 'AgentController', ['only' => 'index']);
     Route::resource('tickets.comments', 'AgentTicketCommentsController', ['only' => ['index', 'store']]);
+});
+
+Route::group(['prefix' => 'v1' , 'middleware' => 'auth:api'], function() {
+    Route::get('/user', function( Request $request){
+        return $request->user();
+    });
 });

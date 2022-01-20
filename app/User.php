@@ -8,6 +8,8 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+use Laravel\Passport\HasApiTokens;
+
 /**
  * @property string name
  */
